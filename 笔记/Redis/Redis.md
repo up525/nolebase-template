@@ -1,6 +1,7 @@
 ---
 comment: true
 ---
+
 # 基础篇Redis
 
 ## 开篇导读
