@@ -4,19 +4,19 @@
 
 ###         1.数组索引越界异常
 
-> ![](https://i-blog.csdnimg.cn/direct/5dfeec9e83fd438fa7b47a392c46d09d.png)![](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw== "点击并拖拽以移动")​编辑
+> ![](https://i-blog.csdnimg.cn/direct/5dfeec9e83fd438fa7b47a392c46d09d.png)![](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw== "点击并拖拽以移动")​
 > 
-> ![](https://i-blog.csdnimg.cn/direct/a16ce97419b345db8bcc01ce6c1b0972.png)![](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw== "点击并拖拽以移动")​编辑
+> ![](https://i-blog.csdnimg.cn/direct/a16ce97419b345db8bcc01ce6c1b0972.png)![](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw== "点击并拖拽以移动")​
 
 ###          2.除0异常
 
-> ![](https://i-blog.csdnimg.cn/direct/b3280eb7c6c24e25bfbb1618ca00f576.png)![](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw== "点击并拖拽以移动")​编辑
+> ![](https://i-blog.csdnimg.cn/direct/b3280eb7c6c24e25bfbb1618ca00f576.png)![](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw== "点击并拖拽以移动")​
 > 
-> ![](https://i-blog.csdnimg.cn/direct/096c0da8b3344c37a106dc28f5bef2df.png)![](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw== "点击并拖拽以移动")​编辑
+> ![](https://i-blog.csdnimg.cn/direct/096c0da8b3344c37a106dc28f5bef2df.png)![](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw== "点击并拖拽以移动")​
 
 # **Java****的异常体系** 
 
-![](https://i-blog.csdnimg.cn/direct/4a9c51c9eb6441098f4ec80937c40a6b.png)![](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw== "点击并拖拽以移动")​编辑
+![](https://i-blog.csdnimg.cn/direct/4a9c51c9eb6441098f4ec80937c40a6b.png)![](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw== "点击并拖拽以移动")​
 
 ##  **Error**：
 
@@ -38,17 +38,17 @@
 
 在方法上使用throws关键字，可以将方法内部出现的异常抛出去给调用者处理。
 
-![](https://i-blog.csdnimg.cn/direct/5eefd512809c44fda273af31dc36bc55.png)![](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw== "点击并拖拽以移动")​编辑
+![](https://i-blog.csdnimg.cn/direct/5eefd512809c44fda273af31dc36bc55.png)![](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw== "点击并拖拽以移动")​
 
 ##  **捕获异常**(try…catch)
 
 直接捕获程序出现的异常。
 
-![](https://i-blog.csdnimg.cn/direct/086718605f0f4bd783824624f8072619.png)![](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw== "点击并拖拽以移动")​编辑
+![](https://i-blog.csdnimg.cn/direct/086718605f0f4bd783824624f8072619.png)![](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw== "点击并拖拽以移动")​
 
 # **异常的作用？** 
 
-![](https://i-blog.csdnimg.cn/direct/9a76ed1f1a394bcfadee902695df0aa5.png)![](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw== "点击并拖拽以移动")​编辑
+![](https://i-blog.csdnimg.cn/direct/9a76ed1f1a394bcfadee902695df0aa5.png)![](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw== "点击并拖拽以移动")​
 
 # 小结
 
@@ -70,7 +70,7 @@
 
 > **Java无法为这个世界上全部的问题都提供异常类来代表， 如果企业自己的某种问题，想通过异常来表示，以便用异常来管理该问题，那就需要自己来定义异常类了。**
 
- ![](https://i-blog.csdnimg.cn/direct/770d6cec06604109892dc9a57a6255bf.png)![](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw== "点击并拖拽以移动")​编辑
+ ![](https://i-blog.csdnimg.cn/direct/770d6cec06604109892dc9a57a6255bf.png)![](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw== "点击并拖拽以移动")​
 
 ###   **自定义运行时异常（用的多）**
 
@@ -128,7 +128,7 @@ public class PasswordErrorException extends BaseException {
 
 ## **异常的处理方案**
 
-![](https://i-blog.csdnimg.cn/direct/0c42ec513fbc45aa889719457800e36b.png)![](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw== "点击并拖拽以移动")​编辑 ![](https://i-blog.csdnimg.cn/direct/bcc260ecc9314939a694bcccdfd612ca.png)![](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw== "点击并拖拽以移动")​编辑
+![](https://i-blog.csdnimg.cn/direct/0c42ec513fbc45aa889719457800e36b.png)![](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw== "点击并拖拽以移动")​![](https://i-blog.csdnimg.cn/direct/bcc260ecc9314939a694bcccdfd612ca.png)![](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw== "点击并拖拽以移动")​
 
 **异常的两种处理方式**
 
@@ -136,13 +136,13 @@ public class PasswordErrorException extends BaseException {
 
 在方法上使用throws关键字，可以将方法内部出现的异常抛出去给调用者处理。
 
-![](https://i-blog.csdnimg.cn/direct/c382f16c86244a7d9a1599b6b18af993.png)![](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw== "点击并拖拽以移动")​编辑 ![](https://i-blog.csdnimg.cn/direct/90a9bd0dc44e41e4914c02a119b49c27.png)![](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw== "点击并拖拽以移动")​编辑
+![](https://i-blog.csdnimg.cn/direct/c382f16c86244a7d9a1599b6b18af993.png)![](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw== "点击并拖拽以移动")​![](https://i-blog.csdnimg.cn/direct/90a9bd0dc44e41e4914c02a119b49c27.png)![](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw== "点击并拖拽以移动")​
 
 ###  **捕获异常****(try…catch)**
 
 直接捕获程序出现的异常。
 
-![](https://i-blog.csdnimg.cn/direct/341e0aa0421940b587bcaa725e75f683.png)![](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw== "点击并拖拽以移动")​编辑![](https://i-blog.csdnimg.cn/direct/489d5700d2854662aab1d2083ffd24b3.png)![](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw== "点击并拖拽以移动")​编辑
+![](https://i-blog.csdnimg.cn/direct/341e0aa0421940b587bcaa725e75f683.png)![](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw== "点击并拖拽以移动")​![](https://i-blog.csdnimg.cn/direct/489d5700d2854662aab1d2083ffd24b3.png)![](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw== "点击并拖拽以移动")​
 
 ## 小结 
 
