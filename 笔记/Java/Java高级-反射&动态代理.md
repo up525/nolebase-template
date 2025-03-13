@@ -71,7 +71,7 @@ System.out.println(clazz1 == clazz2);//true
 System.out.println(clazz2 == clazz3);//true
 ```
 
-![](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw== "点击并拖拽以移动")
+
 
 ## 1.4 字节码文件和字节码文件对象
 
@@ -150,7 +150,7 @@ public class ReflectDemo2 {
 }
 ```
 
-![](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw== "点击并拖拽以移动")
+
 
 ## 1.6 获取构造方法并创建对象
 
@@ -249,7 +249,7 @@ Student stu = (Student) con.newInstance("zhangsan", 23);
 System.out.println(stu);
 ```
 
-![](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw== "点击并拖拽以移动")
+
 
 ## 1.7 获取成员变量
 
@@ -412,7 +412,7 @@ public class Student {
 }
 ```
 
-![](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw== "点击并拖拽以移动")
+
 
 ​
 
@@ -556,7 +556,7 @@ public class Student {
 }
 ```
 
-![](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw== "点击并拖拽以移动")
+
 
 ​
 
@@ -619,7 +619,7 @@ public class ReflectDemo6 {
 ​
 ```
 
-![](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw== "点击并拖拽以移动")
+
 
 ## 1.10 获取成员方法并运行
 
@@ -739,7 +739,7 @@ public class Student {
 }
 ```
 
-![](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw== "点击并拖拽以移动")
+
 
 ## 面试题：
 
@@ -789,7 +789,6 @@ public class ReflectDemo8 {
 }
 ```
 
-![](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw== "点击并拖拽以移动")
 
 ​
 
@@ -838,7 +837,6 @@ System.out.println(s);//dbc
 System.out.println(ss);//dbc
 ```
 
-![](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw== "点击并拖拽以移动")
 
 ## 1.13 练习，反射和配置文件结合动态获取的练习（重点）
 
@@ -898,7 +896,6 @@ classname=com.itheima.a02reflectdemo1.Student
 methodname=sleep
 ```
 
-![](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw== "点击并拖拽以移动")
 
 ## 1.14 利用反射保存对象中的信息（重点）
 
@@ -1089,7 +1086,6 @@ public class Teacher {
 ​
 ```
 
-![](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw== "点击并拖拽以移动")
 
 # 2. 动态代理
 
@@ -1243,7 +1239,6 @@ public class BigStar implements Star {
 ​
 ```
 
-![](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw== "点击并拖拽以移动")
 
 ## 2.4 额外扩展
 
@@ -1283,7 +1278,7 @@ public class ProxyUtil {
 }
 ```
 
-![](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw== "点击并拖拽以移动")
+
 
 ## 2.5 动态代理的练习
 
@@ -1372,7 +1367,6 @@ public class MyProxyDemo1 {
 }
 ```
 
-![](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw== "点击并拖拽以移动")
 
 # 小结
 

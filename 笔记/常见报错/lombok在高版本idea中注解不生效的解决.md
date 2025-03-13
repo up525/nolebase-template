@@ -28,7 +28,7 @@ IntelliJ IDEA 2024.3.1.1 + Spring Boot + Maven
         </dependency>
 ```
 
-![](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw== "点击并拖拽以移动")
+
 
 以上三个方法足以解决上述问题。 
 

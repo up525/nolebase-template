@@ -71,7 +71,7 @@ public class AnnoDemo2 {
 }
 ```
 
-![](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw== "点击并拖拽以移动")
+
 
 ## 1.6 元注解（了解）
 
@@ -164,7 +164,7 @@ public class MyTestDemo {
 }
 ```
 
-![](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw== "点击并拖拽以移动")
+
 
 ## 1.8 注解小结：
 
