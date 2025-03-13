@@ -914,7 +914,7 @@ SortedSet的常见命令有：
 
 其中Java客户端也包含很多：
 
-![image-20220609102817435](file://C:/Users/lqj/Desktop/Redis-%E7%AC%94%E8%AE%B0%E8%B5%84%E6%96%99/01-%E5%85%A5%E9%97%A8%E7%AF%87/%E8%AE%B2%E4%B9%89/Redis%E6%B3%A8%E9%87%8A%E7%89%88/assets/image-20220609102817435.png?lastModify=1741838203)
+![](assets/Pasted%20image%2020250313121633.png)
 
 标记为❤的就是推荐使用的java客户端，包括：
 
