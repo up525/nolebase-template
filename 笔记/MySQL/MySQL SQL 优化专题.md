@@ -1,5 +1,8 @@
 ---
 comment: true
+tags:
+  - 知识领域/文档工程
+titleTemplate: 记录回忆，知识和畅想的地方
 ---
 # MySQL SQL 优化专题
 
