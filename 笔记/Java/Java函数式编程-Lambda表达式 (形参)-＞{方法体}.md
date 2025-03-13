@@ -3,9 +3,11 @@
 
 此“**函数**”类似于数学中的函数(强调做什么)，==**只要输入的数据一致返回的结果也是一致的**==
 
-![](https://i-blog.csdnimg.cn/direct/fa3b4034d5c24c05821de317b470766a.png)![](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw== "点击并拖拽以移动")
+![](https://i-blog.csdnimg.cn/direct/fa3b4034d5c24c05821de317b470766a.png)
 
-![](https://i-blog.csdnimg.cn/direct/5a56909978934ad08210b640a8dd4b08.png)![](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw== "点击并拖拽以移动")​
+
+![](https://i-blog.csdnimg.cn/direct/5a56909978934ad08210b640a8dd4b08.png)
+​
 
 ## **函数式编程解决了什么问题？**
 
@@ -17,7 +19,9 @@
 > 
 > 可以**用于替代某些匿名内部类对象，从而让程序更简洁，可读性更好。**
 
-![](https://i-blog.csdnimg.cn/direct/be63beff33304ced870a6ca083114cfd.png)![](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw== "点击并拖拽以移动")​![](https://i-blog.csdnimg.cn/direct/2b5beb0c19a145769d14806c44638d45.png)![](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw== "点击并拖拽以移动")​
+![](https://i-blog.csdnimg.cn/direct/be63beff33304ced870a6ca083114cfd.png)
+​![](https://i-blog.csdnimg.cn/direct/2b5beb0c19a145769d14806c44638d45.png)
+​
 
 ##  什么是函数式接口？
 
@@ -30,7 +34,8 @@
 
 根据年龄对学生类排序
 
-![](https://i-blog.csdnimg.cn/direct/ecd9fddc416c4821a8f926781ad601f3.png)![](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw== "点击并拖拽以移动")
+![](https://i-blog.csdnimg.cn/direct/ecd9fddc416c4821a8f926781ad601f3.png)
+
 
 ##  Lambda表达式的省略规则
 

@@ -55,7 +55,6 @@ public class RegexDemo1 {
 }
 ```
 
-![](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw== "点击并拖拽以移动")
 
 - 使用正则表达式验证：
     
@@ -69,7 +68,6 @@ public class Demo {
 }
 ```
 
-![](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw== "点击并拖拽以移动")
 
 **我们接下来就重点学习怎样写正则表达式**
 
@@ -156,10 +154,6 @@ public class RegexDemo2 {
 }
 ```
 
-![](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw== "点击并拖拽以移动")
-
-​
-
 ## 1.3 正则表达式-逻辑运算符
 
 - > 语法示例：
@@ -212,9 +206,6 @@ public class RegexDemo3 {
 }
 ```
 
-![](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw== "点击并拖拽以移动")
-
-​
 
 ## 1.4 正则表达式-预定义字符
 
@@ -279,8 +270,6 @@ public class Demo {
 }
 ```
 
-![](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw== "点击并拖拽以移动")
-
 ## 1.5 正则表达式-数量词
 
 - > 语法示例：
@@ -316,10 +305,6 @@ public class Demo {
     }
 }
 ```
-
-![](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw== "点击并拖拽以移动")
-
-​
 
 ## 1.6 正则表达式练习1
 
@@ -411,10 +396,6 @@ public class RegexDemo4 {
 }
 ```
 
-![](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw== "点击并拖拽以移动")
-
-​
-
 ## 1.7 正则表达式练习2
 
 需求 请编写正则表达式验证用户名是否满足要求。要求:大小写字母，数字，下划线一共4-16位 请编写正则表达式验证身份证号码是否满足要求。 简单要求: 18位，前17位任意数字，最后一位可以是数字可以是大写或小写的x 复杂要求: 按照身份证号码的格式严格要求。
@@ -500,8 +481,6 @@ public class RegexDemo5 {
     }
 }
 ```
-
-![](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw== "点击并拖拽以移动")
 
 # 总结
 
