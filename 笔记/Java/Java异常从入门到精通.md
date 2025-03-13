@@ -131,7 +131,7 @@ public class PasswordErrorException extends BaseException {
 
 **异常的两种处理方式**
 
-### **抛出异常（****throws****）**
+### **抛出异常（**throws**）
 
 在方法上使用throws关键字，可以将方法内部出现的异常抛出去给调用者处理。
 
