@@ -7,8 +7,9 @@ Redis是一种键值型的NoSql数据库，这里有两个关键字：
 - NoSql
     
 
-其中**键值型**，是指Redis中存储的数据都是以key.value对的形式存储，而value的形式多种多样，可以是字符串.数值.甚至json：
-![](assets/Pasted%20image%2020250312200859.png)而NoSql则是相对于传统关系型数据库而言，有很大差异的一种数据库。
+其中**键值型**，是指Redis中存储的数据都是以key.value对的形式存储，而value的形式多种多样，可以是字符串.数值.甚至json：![](assets/Pasted%20image%2020250313113628.png)
+
+而NoSql则是相对于传统关系型数据库而言，有很大差异的一种数据库。
 
 对于存储的数据，没有类似Mysql那么严格的约束，比如唯一性，是否可以为null等等，所以我们把这种松散结构的数据库，称之为NoSQL数据库。
 ## 初始Redis
@@ -298,4 +299,3 @@ systemctl enable redis
 
 通过help [command] 可以查看一个命令的具体用法，例如：
 
-![1652887865189](assets/1652887865189.png)
