@@ -22,7 +22,7 @@
 
 - 人话总结：OpenFeign是一种替代RestTemplate的工具，专门用来实现不同微服务之间实现远程调用的业务API，相比RestTemplate功能更强大，操作更简介。
 
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/2c65e85d314946b99fcd14819801616c.png)
+![](https://i-blog.csdnimg.cn/direct/2c65e85d314946b99fcd14819801616c.png)
 
 
 ### 1.2 引入依赖
@@ -65,7 +65,7 @@ public interface ProductFeignClient {//使用feign实现的专门向product服�
 ```
 
 ​		1.2远程调用 - 第三方API
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/8998406bf209448baa22ca71342ca785.png)
+![](https://i-blog.csdnimg.cn/direct/8998406bf209448baa22ca71342ca785.png)
 
 
 tip：如何编写好OpenFeign声明式的远程调用接口？
@@ -95,7 +95,7 @@ public User getUser(Long id) {
 负载均衡发生在客户端就是客户端负载均衡。
 
 负载均衡发生在服务端就是服务端负载均衡。
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/879bd948469f4b82a8c212df8719eae3.png)
+![](https://i-blog.csdnimg.cn/direct/879bd948469f4b82a8c212df8719eae3.png)
 
 
 ------
@@ -132,12 +132,12 @@ public class OrderConfig {
 
 ### 2.2 超时控制（避免服务器宕机）
 商品服务卡慢导致订单服务卡慢，导致。。。链式效应进而导致整个服务的卡慢，（服务雪崩）因此我们需要一个超时控制机制。
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/08c80cd5b29b46688869d7a1dc979379.png)
+![](https://i-blog.csdnimg.cn/direct/08c80cd5b29b46688869d7a1dc979379.png)
  connectTimeout： 打电话嘟嘟嘟，没人接（电话没接通）
 
 ​		readTimeout:   喂喂喂，没人回（电话接通了）
 **openfeign：默认配置**
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/1a70a1a608b34fec87b70782a19840cc.png)
+![](https://i-blog.csdnimg.cn/direct/1a70a1a608b34fec87b70782a19840cc.png)
 
 
 ```yaml
@@ -161,7 +161,7 @@ spring:
 
 远程调用超时失败后，还可以进行多次尝试，如果某次成功返回ok，如 果多次依然失败则结束调用，返回错误。(一次调用失败我不甘心，我想多试几次。)
 
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/75cf36d921d146609df3ebe41839f214.png)
+![](https://i-blog.csdnimg.cn/direct/75cf36d921d146609df3ebe41839f214.png)
 
 
 ```yaml
@@ -242,7 +242,7 @@ public class ProductFeignClientFallback implements ProductFeignClient {
 ------
 
 ## 三、拦截器用法
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/384c973e57f4416bb7c9c2b47ec9187e.png)
+![](https://i-blog.csdnimg.cn/direct/384c973e57f4416bb7c9c2b47ec9187e.png)
 
 
 1.请求拦截器

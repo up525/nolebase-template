@@ -332,7 +332,7 @@ WHERE salary > (SELECT AVG(salary) FROM employees); -- 返回单个数值
 **特征**：返回单列多行数据
 **常用的操作符**：IN、NOTIN、ANY、SOME、ALL
  **场景**： 子查询返回的结果是一列（可以是多行），这种子查询称为列子查询。
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/5afb6db019e64bf0869a8be95061516e.png)
+![](https://i-blog.csdnimg.cn/direct/5afb6db019e64bf0869a8be95061516e.png)
 ```sql
 --1.查询销售部和市场部的所有员工信息
 --a.查询销售部和市场部的部门ID
@@ -563,9 +563,9 @@ HAVING COUNT(*) > (
 
 ------
 ## 四、实战练习
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/72abdcb6e3914242a4b390ff23b19207.png)
+![](https://i-blog.csdnimg.cn/direct/72abdcb6e3914242a4b390ff23b19207.png)
 
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/a402013741974969806a900a6a2e8bee.png)
+![](https://i-blog.csdnimg.cn/direct/a402013741974969806a900a6a2e8bee.png)
 ```sql
 # 查询年龄为男，并且年龄在20-40(含)以内的姓名为三个字的员工。
 select * from emp where gender='男' and age>20 and age<=40 and name like '___';

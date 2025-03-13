@@ -15,7 +15,7 @@
 假如我们要执行的SQL语句为 ： select * from user where age = 45;
 
 1). 无索引情况
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/e3241eb44ef643ffb5b1c72b2a17e54f.png)
+![](https://i-blog.csdnimg.cn/direct/e3241eb44ef643ffb5b1c72b2a17e54f.png)
 
 
 
@@ -30,7 +30,7 @@
 -- 创建索引示例
 CREATE INDEX idx_user_age ON user(age);  -- 年龄字段建立常规索引
 ```
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/5fd7266d7d03429d830dca95549eef51.png)
+![](https://i-blog.csdnimg.cn/direct/5fd7266d7d03429d830dca95549eef51.png)
 
 
 
@@ -39,7 +39,7 @@ CREATE INDEX idx_user_age ON user(age);  -- 年龄字段建立常规索引
 <!--备注： 这里只是假设索引的结构是二叉树，介绍一下索引的大概原理，只是一个示意图，并 不是索引的真实结构，索引的真实结构，后面会详细介绍。-->
 
 ### 1.3特点
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/f688ffa0d75942e6a377e56264bd2add.png)
+![](https://i-blog.csdnimg.cn/direct/f688ffa0d75942e6a377e56264bd2add.png)
 
 
 解析：
@@ -54,7 +54,7 @@ CREATE INDEX idx_user_age ON user(age);  -- 年龄字段建立常规索引
 
 MySQL的索引是在存储引擎层实现的，不同的存储引擎有不同的索引结构，主要包含以下几种：
 
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/c143e291b9a84d7b9d62478e75b09303.png)
+![](https://i-blog.csdnimg.cn/direct/c143e291b9a84d7b9d62478e75b09303.png)
 
 
 补充：
@@ -68,7 +68,7 @@ MySQL的索引是在存储引擎层实现的，不同的存储引擎有不同的
 4.Full-text用的少，了解
 
 不同的存储引擎对于索引结构的支持情况。
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/5eb030e9b80c447581e01c5aaae5116f.png)
+![](https://i-blog.csdnimg.cn/direct/5eb030e9b80c447581e01c5aaae5116f.png)
 
 **注意： 我们平常所说的索引，如果没有特别指明，都是指B+树结构组织的索引。**
 
@@ -78,12 +78,12 @@ MySQL的索引是在存储引擎层实现的，不同的存储引擎有不同的
 
 假如说MySQL的索引结构采用二叉树的数据结构，比较理想的结构如下：
 
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/577f63339d044ed4a36c037b1f01b80e.png)
+![](https://i-blog.csdnimg.cn/direct/577f63339d044ed4a36c037b1f01b80e.png)
 
 
 如果主键是顺序插入的，则会形成一个单向链表，结构如下：
 
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/745aa5c96f384a46a16f88d117b03a2c.png)
+![](https://i-blog.csdnimg.cn/direct/745aa5c96f384a46a16f88d117b03a2c.png)
 
 
 所以，如果选择二叉树作为索引结构，会存在以下缺点： 
@@ -100,7 +100,7 @@ B-Tree，B树是一种多叉路衡查找树，相对于二叉树，B树每个节
 
  以一颗最大度数(max-degree)为5(5阶)的b-tree为例，那这个B树每个节点最多存储4个key，5 个指针：
 
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/5aa5d4891f8c44b5ad5ea20e45ae46bc.png)
+![](https://i-blog.csdnimg.cn/direct/5aa5d4891f8c44b5ad5ea20e45ae46bc.png)
 
 
 知识小贴士: 树的度数指的是一个节点的子节点个数。
@@ -117,7 +117,7 @@ B树可视化网站：https://www.cs.usfca.edu/~galles/visualization/BTree.html
 
 B+Tree是B-Tree的变种，我们以一颗最大度数（max-degree）为4（4阶）的b+tree为例，来看一 下其结构示意图：
 
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/540c4d3d883144bb97ec8f257ed7bb6b.png)
+![](https://i-blog.csdnimg.cn/direct/540c4d3d883144bb97ec8f257ed7bb6b.png)
 
 
 我们可以看到，两部分：
@@ -157,7 +157,7 @@ CREATE TABLE test_hash (
 
 **如果两个(或多个)键值，映射到一个相同的槽位上，他们就产生了hash冲突（也称为hash碰撞），可 以通过链表来解决。**
 
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/a04cd300d9e74ac4b0f066ebc1860ed6.png)
+![](https://i-blog.csdnimg.cn/direct/a04cd300d9e74ac4b0f066ebc1860ed6.png)
 
 
 
@@ -191,7 +191,7 @@ C. 相对Hash索引，B+tree支持范围匹配及排序操作；
 
 ### 3.1 功能分类
 
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/e46080e50d374352920d82408b7a7285.png)
+![](https://i-blog.csdnimg.cn/direct/e46080e50d374352920d82408b7a7285.png)
 
 
 ```sql
@@ -226,7 +226,7 @@ CREATE SPATIAL INDEX idx_gps ON locations(coord);
 
 
 聚集索引和二级索引的具体结构如下： 
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/68c11aa10c3f4b289cabdc5c830cd33f.png)
+![](https://i-blog.csdnimg.cn/direct/68c11aa10c3f4b289cabdc5c830cd33f.png)
 
 
 
@@ -239,7 +239,7 @@ CREATE SPATIAL INDEX idx_gps ON locations(coord);
 
 接下来，我们来分析一下，当我们执行如下的SQL语句时，具体的查找过程是什么样子的。
 
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/cff1704442144bd3ac758ff888875015.png)
+![](https://i-blog.csdnimg.cn/direct/cff1704442144bd3ac758ff888875015.png)
 
 
  具体过程如下: 
@@ -269,7 +269,7 @@ B. select * from user where name = 'Arm' ;
 
 思考题：InnoDB主键索引的B+tree高度为多高呢?
 
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/d91139fea1774bc580b071378101ce3f.png)
+![](https://i-blog.csdnimg.cn/direct/d91139fea1774bc580b071378101ce3f.png)
 
 
 
@@ -320,7 +320,7 @@ SQL执行频率
 SHOW  GLOBAL STATUS LIKE  'Com_______'; 
 ```
 
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/7372d02834484ff2b861ddf8d450a5c7.png)
+![](https://i-blog.csdnimg.cn/direct/7372d02834484ff2b861ddf8d450a5c7.png)
 
 
 Com_delete: 删除次数
@@ -347,12 +347,12 @@ EXPLAIN 或者 DESC命令获取 MySQL 如何执行 SELECT 语句的信息，包�
  EXPLAIN SELECT * FROM user WHERE age > 25 ORDER BY create_time;  
 ```
 
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/6d1128ee96a840ad9377ee5a40584820.png)
+![](https://i-blog.csdnimg.cn/direct/6d1128ee96a840ad9377ee5a40584820.png)
 
 
  Explain 执行计划中各个字段的含义:
 
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/eabb77bb137b44edb65c7632a072c504.png)
+![](https://i-blog.csdnimg.cn/direct/eabb77bb137b44edb65c7632a072c504.png)
 
 
 - **id值越大越先执行，id值相同从上至下**。
@@ -390,7 +390,7 @@ EXPLAIN 或者 DESC命令获取 MySQL 如何执行 SELECT 语句的信息，包�
 --查看当前是否开启慢查询日志
 show variables like 'slow_query_log';
 
---如果要开启慢查询日志，需要在MySQL的配置文件（/etc/my.cnf）中配置如下信息：（可以使用vi编辑器）
+--如果要开启慢查询日志，需要在MySQL的配置文件（/etc/my.cnf）中配置如下信息：（可以使用vi器）
 # 开启MySQL慢日志查询开关
 slow_query_log=1
 # 设置慢日志的时间为2秒，SQL语句执行时间超过2秒，就会视为慢查询，记录慢查询日志
@@ -624,14 +624,14 @@ SELECT * FROM user WHERE age BETWEEN 20 AND 30;
 ALTER TABLE user ADD INDEX idx_age_name (age, name);
 SELECT name, age FROM user WHERE age BETWEEN 20 AND 30; -- Using index
 ```
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/a35a26ff587e4ce4be7cac87139c433f.png)
+![](https://i-blog.csdnimg.cn/direct/a35a26ff587e4ce4be7cac87139c433f.png)
 
 
 
 回表：先从二级索引去查，拿到id后再根据id去聚集索引加载具体的数据的过程。
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/bd77cd88b7a24c9786ee8ad8701a49e6.png)
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/32bf459551054bfeb3af71ab4f9cae53.png)
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/5865ee5954e840d0aae942c9fc61279c.png)
+![](https://i-blog.csdnimg.cn/direct/bd77cd88b7a24c9786ee8ad8701a49e6.png)
+![](https://i-blog.csdnimg.cn/direct/32bf459551054bfeb3af71ab4f9cae53.png)
+![](https://i-blog.csdnimg.cn/direct/5865ee5954e840d0aae942c9fc61279c.png)
 
 
 这就是为什么要尽量减少使用select *，因为使用selcet *很容易造成回表查询，导致查询性能降低。
@@ -670,7 +670,7 @@ select  count(distinct substring(email,1,5)) / count(*)  from  tb_user ;
 
  3). 前缀索引的查询流程
 
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/c903ac719e05406e9590dd2d30b41975.png)
+![](https://i-blog.csdnimg.cn/direct/c903ac719e05406e9590dd2d30b41975.png)
 
 
 ### 7.2 单列索引与联合索引（组合索引）
@@ -680,14 +680,14 @@ select  count(distinct substring(email,1,5)) / count(*)  from  tb_user ;
 联合索引：即一个索引包含了多个列。
 
 我们先来看看 tb_user 表中目前的索引情况: 
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/7738ba2019c54d93b859ca926511be1d.png)
+![](https://i-blog.csdnimg.cn/direct/7738ba2019c54d93b859ca926511be1d.png)
 
 
 
 在查询出来的索引中，既有单列索引，又有联合索引。
 
 接下来，我们来执行一条SQL语句，看看其执行计划：
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/a574c7853a4b459e9d8cd73524591f02.png)
+![](https://i-blog.csdnimg.cn/direct/a574c7853a4b459e9d8cd73524591f02.png)
 
 
 
@@ -697,14 +697,14 @@ select  count(distinct substring(email,1,5)) / count(*)  from  tb_user ;
  create unique index idx_user_phone_name on tb_user(phone,name);
 ```
 
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/ed09d14f42ae48388039f8f6a2ba5a29.png)
+![](https://i-blog.csdnimg.cn/direct/ed09d14f42ae48388039f8f6a2ba5a29.png)
 
 
 **在业务场景中，如果存在多个查询条件，考虑针对于查询字段建立索引时，建议建立联合索引， 而非单列索引。**
 
 如果查询使用的是联合索引，具体的结构示意图如下：
 
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/485b2ba163a147fbb37f450c2af7ce69.png)
+![](https://i-blog.csdnimg.cn/direct/485b2ba163a147fbb37f450c2af7ce69.png)
 
 
 先按phone进行排序，然后再根据name字段进行排序。

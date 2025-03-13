@@ -20,7 +20,7 @@ wiki：[https://github.com/alibaba/Sentinel/wiki](https://github.com/alibaba/Sen
 
 ## 2 架构
 
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/da70899745fb42e2bc5ae3e1df55f8e3.png)
+![](https://i-blog.csdnimg.cn/direct/da70899745fb42e2bc5ae3e1df55f8e3.png)
 
 
 - **核心模块**：
@@ -58,11 +58,11 @@ wiki：[https://github.com/alibaba/Sentinel/wiki](https://github.com/alibaba/Sen
 
 3.通过http://localhost:8080即可访问sentinel的控制台
 
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/f3216c4147934a76a01c6d8d6a304620.png)
+![](https://i-blog.csdnimg.cn/direct/f3216c4147934a76a01c6d8d6a304620.png)
 
 
 正常访问后显示的界面：
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/4717c97de9db463f95884b863d0ada00.png)
+![](https://i-blog.csdnimg.cn/direct/4717c97de9db463f95884b863d0ada00.png)
 
 
 
@@ -82,7 +82,7 @@ spring:
 
 配置成功后：
 
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/d4636f7c227141de99171148cead0e47.png)
+![](https://i-blog.csdnimg.cn/direct/d4636f7c227141de99171148cead0e47.png)
 
 
 假设我们要把createOrder注册为我们要管理的服务。
@@ -109,7 +109,7 @@ spring:
 
 创建订单的请求：http://localhost:8000/order/create?userId=1&productId=100
 
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/823e06f1c59c4044859ce5d074b72769.png)
+![](https://i-blog.csdnimg.cn/direct/823e06f1c59c4044859ce5d074b72769.png)
 
 
 接下来就可以对资源进行流控。

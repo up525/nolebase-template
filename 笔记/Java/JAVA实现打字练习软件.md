@@ -503,7 +503,7 @@ public class APP {
 
 功能简介
 
-![](https://i-blog.csdnimg.cn/blog_migrate/0f31f5eb2c65be21f2cf4c5946293796.png)![](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw== "点击并拖拽以移动")​编辑
+![](https://i-blog.csdnimg.cn/blog_migrate/0f31f5eb2c65be21f2cf4c5946293796.png)![](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw== "点击并拖拽以移动")​
 
 导入文本--可以向第一个文本写入数据
 
@@ -511,21 +511,21 @@ public class APP {
 
 退出--点击退出，app会直接关闭。
 
-![](https://i-blog.csdnimg.cn/blog_migrate/7c1891164b4ba2d1a275e5835afd0c02.png)![](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw== "点击并拖拽以移动")​编辑
+![](https://i-blog.csdnimg.cn/blog_migrate/7c1891164b4ba2d1a275e5835afd0c02.png)![](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw== "点击并拖拽以移动")​
 
 事先在桌面建立1.txt文本，并向里面写入数据
 
  点击第二个Desktop
 
- ![](https://i-blog.csdnimg.cn/blog_migrate/0717629138b52960945daffe31b8a38f.png)![](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw== "点击并拖拽以移动")​编辑
+ ![](https://i-blog.csdnimg.cn/blog_migrate/0717629138b52960945daffe31b8a38f.png)![](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw== "点击并拖拽以移动")​
 
- ![](https://i-blog.csdnimg.cn/blog_migrate/9c05dfb31267ae1288b17855b9b47ccb.png)![](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw== "点击并拖拽以移动")​编辑
+ ![](https://i-blog.csdnimg.cn/blog_migrate/9c05dfb31267ae1288b17855b9b47ccb.png)![](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw== "点击并拖拽以移动")​
 
-![](https://i-blog.csdnimg.cn/blog_migrate/6ce3d5f0498ae86be1c512b68ef3d29a.png)![](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw== "点击并拖拽以移动")​编辑
+![](https://i-blog.csdnimg.cn/blog_migrate/6ce3d5f0498ae86be1c512b68ef3d29a.png)![](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw== "点击并拖拽以移动")​
 
- ![](https://i-blog.csdnimg.cn/blog_migrate/8af92e8e9dede924ec472586f7844e84.png)![](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw== "点击并拖拽以移动")​编辑
+ ![](https://i-blog.csdnimg.cn/blog_migrate/8af92e8e9dede924ec472586f7844e84.png)![](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw== "点击并拖拽以移动")​
 
-![](https://i-blog.csdnimg.cn/blog_migrate/4a5406db4b05b3c153527db33ef6c47a.png)![](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw== "点击并拖拽以移动")​编辑
+![](https://i-blog.csdnimg.cn/blog_migrate/4a5406db4b05b3c153527db33ef6c47a.png)![](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw== "点击并拖拽以移动")​
 
  希望看到最后的你，如果觉得这篇文章对你有一点点帮助或者启示的话，求点赞，求收藏，求关注，谢谢啦！！！
 

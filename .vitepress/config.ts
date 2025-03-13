@@ -130,7 +130,7 @@ export default defineConfig({
     darkModeSwitchLabel: '切换主题',
     editLink: {
       pattern: `${githubRepoLink}/tree/main/:path`,
-      text: '编辑本页面',
+      text: '本页面',
     },
     socialLinks: [
       { icon: 'github', link: githubRepoLink },

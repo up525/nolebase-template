@@ -110,7 +110,7 @@ startup.cmd -m standalone
 ## 四、注册中心实战
 
 ### 远程调用 - 基本流程
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/514654c9c35a42939ad79198fcd03006.png)
+![](https://i-blog.csdnimg.cn/direct/514654c9c35a42939ad79198fcd03006.png)
 
 
 
@@ -130,7 +130,7 @@ startup.cmd -m standalone
 
 2.**配置Nacos地址**
 
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/f0729d1bf49b41c390599b3f29551538.png)
+![](https://i-blog.csdnimg.cn/direct/f0729d1bf49b41c390599b3f29551538.png)
 
 
 ```properties
@@ -248,7 +248,7 @@ private Product getProductFromRemqteWithLoadBalanceAnnotation(Long productId) {
 3.**远程调用 - 面试题**
 
 思考：注册中心宕机，远程调用还能成功吗？
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/7d30abf1ae1d4ef299dca452277b8de0.png)
+![](https://i-blog.csdnimg.cn/direct/7d30abf1ae1d4ef299dca452277b8de0.png)
 
 
 
@@ -417,9 +417,9 @@ public class OrderMainApplication {
 
 **示例：**
 
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/afe3b2333d5d4c669a317780fcce2102.png)
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/6bd0ecf727a249228af4e781b471f71c.png)
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/724032b1e8934c6fb4624d4171f1fd2a.png)
+![](https://i-blog.csdnimg.cn/direct/afe3b2333d5d4c669a317780fcce2102.png)
+![](https://i-blog.csdnimg.cn/direct/6bd0ecf727a249228af4e781b471f71c.png)
+![](https://i-blog.csdnimg.cn/direct/724032b1e8934c6fb4624d4171f1fd2a.png)
 
 
 
@@ -428,8 +428,8 @@ public class OrderMainApplication {
 
 2. **在Nacos中创建配置**
 
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/aace86fe46ae46eab0eed77a82d6b45f.png)
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/d7f7dbe65879476fac68c20c6f40f7c0.png)
+![](https://i-blog.csdnimg.cn/direct/aace86fe46ae46eab0eed77a82d6b45f.png)
+![](https://i-blog.csdnimg.cn/direct/d7f7dbe65879476fac68c20c6f40f7c0.png)
 
 
 

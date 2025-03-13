@@ -36,7 +36,7 @@ InnoDB是一种兼顾高可靠性和高性能的通用存储引擎，在 MySQL 5
 3.可以在命令行中执行ibd2sdi score.ibd查看xxx.ibd文件
 
 4.**innoDB**的逻辑存储结构
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/a1bb0494c5d847a2885e015d626b299e.png)
+![](https://i-blog.csdnimg.cn/direct/a1bb0494c5d847a2885e015d626b299e.png)
 
 
 
@@ -140,8 +140,8 @@ CREATE TABLE temp_data (
 ## 5. 存储引擎选择策略
 
 **面试题InnoDB和MyISAM的区别？**
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/33336ea42b954601a578157c874dd34b.png)
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/04afd59422f94597ae2885168bf6b877.png)
+![](https://i-blog.csdnimg.cn/direct/33336ea42b954601a578157c874dd34b.png)
+![](https://i-blog.csdnimg.cn/direct/04afd59422f94597ae2885168bf6b877.png)
 
 
 
