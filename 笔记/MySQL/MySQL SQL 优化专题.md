@@ -49,12 +49,12 @@ load  data  local  infile  '/root/sql1.log'  into  table  tb_user  fields  termi
 - InnoDB采用B+树索引，数据存储在叶子节点
 - 页分裂（离散插入导致）和页合并（删除数据后触发）
 
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/c299061d650040fbb093edf440cee4ec.png)
+![](https://i-blog.csdnimg.cn/direct/c299061d650040fbb093edf440cee4ec.png)
 
 
 行数据，都是存储在聚集索引的叶子节点上的。InnoDB的逻辑结构图：
 
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/e471f66ddf994124950101b3a4da3a03.png)
+![](https://i-blog.csdnimg.cn/direct/e471f66ddf994124950101b3a4da3a03.png)
 
 
 在InnoDB引擎中，数据行是记录在逻辑结构 page 页中的，而每一个页的大小是固定的，默认16K。 那也就意味着， 一个页中所存储的行也是有限的，如果插入的数据行row在该页存储不小，将会存储 到下一个页中，页与页之间会通过指针连接。
@@ -67,22 +67,22 @@ A. 主键顺序插入效果
 
 ①. 从磁盘中申请页， 主键顺序插入
 
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/528a5f71522d410bb592236915038aa9.png)
+![](https://i-blog.csdnimg.cn/direct/528a5f71522d410bb592236915038aa9.png)
 
 
 ②. 第一个页没有满，继续往第一页插入
 
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/fa22b007ed3b485092bcda61382e808d.png)
+![](https://i-blog.csdnimg.cn/direct/fa22b007ed3b485092bcda61382e808d.png)
 
 
 ③. 当第一个也写满之后，再写入第二个页，页与页之间会通过指针连接
 
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/b1752f6e4186444ea80655acb39a1ab2.png)
+![](https://i-blog.csdnimg.cn/direct/b1752f6e4186444ea80655acb39a1ab2.png)
 
 
 ④. 当第二页写满了，再往第三页写入
 
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/eaa506216fbf4d58b8130e68097e501d.png)
+![](https://i-blog.csdnimg.cn/direct/eaa506216fbf4d58b8130e68097e501d.png)
 
 
 
@@ -91,32 +91,32 @@ B. 主键乱序插入效果
 
 ①. 加入1#,2#页都已经写满了，存放了如图所示的数据
 
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/fc753b4d5bd44d1da403ed6c487d0046.png)
+![](https://i-blog.csdnimg.cn/direct/fc753b4d5bd44d1da403ed6c487d0046.png)
 
 ②. 此时再插入id为50的记录，我们来看看会发生什么现象 ？
 
 会再次开启一个页，写入新的页中吗？
 
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/da25ecd0a4ac400f92269480f76396c2.png)
+![](https://i-blog.csdnimg.cn/direct/da25ecd0a4ac400f92269480f76396c2.png)
 
 
 不会。因为，索引结构的叶子节点是有顺序的。按照顺序，应该存储在47之后。
 
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/ffb0a2f091034283b308f584bdb567ba.png)
+![](https://i-blog.csdnimg.cn/direct/ffb0a2f091034283b308f584bdb567ba.png)
 
 
 但是47所在的1#页，已经写满了，存储不了50对应的数据了。 那么此时会开辟一个新的页 3#。
 
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/2df9e2ec29d8444e98892e3e5f31dc1c.png)
+![](https://i-blog.csdnimg.cn/direct/2df9e2ec29d8444e98892e3e5f31dc1c.png)
 
 
 但是并不会直接将50存入3#页，而是会将1#页后一半的数据，移动到3#页，然后在3#页，插入50。
 
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/6e970bf647de4228ada82b4f3b2c1bab.png)
+![](https://i-blog.csdnimg.cn/direct/6e970bf647de4228ada82b4f3b2c1bab.png)
 
 
 移动数据，并插入id为50的数据之后，那么此时，这三个页之间的数据顺序是有问题的。 1#的下一个 页，应该是3#， 3#的下一个页是2#。 所以，此时，需要重新设置链表指针。（连接过程类似双向链表的插入过程）
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/027b96faec0f4a7bbf24bfe211684e38.png)
+![](https://i-blog.csdnimg.cn/direct/027b96faec0f4a7bbf24bfe211684e38.png)
 
 
 
@@ -125,7 +125,7 @@ B. 主键乱序插入效果
 3). 页合并
 
 目前表中已有数据的索引结构(叶子节点)如下：
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/178a00d8e003433b8c930b677f8b20a6.png)
+![](https://i-blog.csdnimg.cn/direct/178a00d8e003433b8c930b677f8b20a6.png)
 
 
 
@@ -133,21 +133,21 @@ B. 主键乱序插入效果
 
 当删除一行记录时，**实际上记录并没有被物理删除，只是记录被标记（flaged）**为删除并且它的空间 变得允许被其他记录声明使用。
 
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/77ec1a7a7b2e41fabb2b01625590bfb5.png)
+![](https://i-blog.csdnimg.cn/direct/77ec1a7a7b2e41fabb2b01625590bfb5.png)
 
 
 当我们继续删除2#的数据记录
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/42bdccbfed534a208a7613ec1077a6a7.png)
+![](https://i-blog.csdnimg.cn/direct/42bdccbfed534a208a7613ec1077a6a7.png)
 
 
 
 **当页中删除的记录达到 MERGE_THRESHOLD（默认为页的50%）**，InnoDB会开始寻找最靠近的页（前或后）看看是否可以将两个页合并以优化空间使用。
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/053a9abc81b842f48561da1ec1d89308.png)
+![](https://i-blog.csdnimg.cn/direct/053a9abc81b842f48561da1ec1d89308.png)
 
 
 
 删除数据，并将页合并之后，再次插入新的数据21，则直接插入3#页
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/2a23ebe6324d487d9257cfc5842c0512.png)
+![](https://i-blog.csdnimg.cn/direct/2a23ebe6324d487d9257cfc5842c0512.png)
 
 
 这个里面所发生的合并页的这个现象，就称之为 "页合并"。
@@ -204,9 +204,9 @@ explain select  id,age,phone from tb_user order by age desc , phone desc ;
 优化后查询（Using index）。
 
 升序/降序联合索引结构图示:
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/ddd4b65b2c2c4f0c9f56c1594c631624.png)
+![](https://i-blog.csdnimg.cn/direct/ddd4b65b2c2c4f0c9f56c1594c631624.png)
 
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/40ce33d79f5742d4826359aeb9fc42f6.png)
+![](https://i-blog.csdnimg.cn/direct/40ce33d79f5742d4826359aeb9fc42f6.png)
 
 
 
@@ -259,7 +259,7 @@ GROUP BY profession; -- 使用索引
 在数据量比较大时，如果进行limit分页查询，在查询时，越往后，分页查询效率越低。
 
 我们一起来看看执行limit分页查询耗时对比：
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/4165addd56d14807aa29da4dc7be9b94.png)
+![](https://i-blog.csdnimg.cn/direct/4165addd56d14807aa29da4dc7be9b94.png)
 
 
 
@@ -317,7 +317,7 @@ InnoDB 引擎就麻烦了，它执行 count(*) 的时候，需要把数据一行
 count() 是一个聚合函数，对于返回的结果集，一行行地判断，如果 count 函数的参数不是  NULL，累计值就加 1，否则不加，最后返回累计值。
 
  用法：count（*）、count（主键）、count（字段）、count（数字）
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/82cc6b9098da4aa698c32c966c3b0666.png)
+![](https://i-blog.csdnimg.cn/direct/82cc6b9098da4aa698c32c966c3b0666.png)
 
 
 
@@ -348,7 +348,7 @@ SELECT COUNT(*) FROM tb_user;  -- 官方优化写法
 ```sql
 update  course  set  name = 'javaEE'  where  id  =  1 ;
 ```
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/5b47073ddcd74c028e80859bac43526b.png)
+![](https://i-blog.csdnimg.cn/direct/5b47073ddcd74c028e80859bac43526b.png)
 
 
 
@@ -359,7 +359,7 @@ update  course  set  name = 'javaEE'  where  id  =  1 ;
 ```sql
 update course set name = 'SpringBoot' where name = 'PHP' ;
 ```
-![在这里插入图片描述](https://i-blog.csdnimg.cn/direct/eaf97b2bde06477f84b7def98c9840da.png)
+![](https://i-blog.csdnimg.cn/direct/eaf97b2bde06477f84b7def98c9840da.png)
 
 
 
