@@ -30,14 +30,14 @@ const sortedList = computed(() => {
     </a>
     <div class="text-sm space-x-4">
       <div class="inline-block">
-        <span class="i-octicon:repo-16 align-middle text-xs opacity-50"></span>
+        <span class="i-octicon:repo-16 align-middle text-xs opacity-50" />
         <span class="align-middle opacity-50">
           类别：
         </span>
         <span class="rounded-sm bg-[var(--vp-c-bg-mute)] px-6px py-3px align-middle opacity-70">{{ item.category }}</span>
       </div>
       <div class="inline-block opacity-50">
-        <span class="i-octicon:history-16 align-middle text-xs"></span>
+        <span class="i-octicon:history-16 align-middle text-xs" />
         <span class="align-middle">
           更新时间：{{ new Date(item.lastUpdated || 0).toLocaleDateString() }}
         </span>

@@ -114,14 +114,14 @@ function copyShareLink() {
       leave-from-class="opacity-100"
     >
       <span v-if="shareSuccess" flex items-center space-x-1>
-        <span class="i-octicon:checkbox-16"></span>
+        <span class="i-octicon:checkbox-16" />
         <span>复制成功</span>
       </span>
       <span v-else flex items-center space-x-1>
-        <span class="i-octicon:share-16"></span>
+        <span class="i-octicon:share-16" />
         <span>分享此页</span>
       </span>
     </Transition>
   </button>
-  <div class="bg-$vp-c-divider-light" mx2 block h-24px w-1px md:hidden></div>
+  <div class="bg-$vp-c-divider-light" mx2 block h-24px w-1px md:hidden />
 </template>

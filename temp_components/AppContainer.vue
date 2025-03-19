@@ -28,7 +28,7 @@ const props = defineProps<{
         transition="all 200 ease"
         mt-2 block w-fit flex items-center rounded-lg p-2 text-xs shadow-sm
       >
-        <span class="i-ic:outline-arrow-outward"></span> View
+        <span class="i-ic:outline-arrow-outward" /> View
       </a>
     </div>
   </div>

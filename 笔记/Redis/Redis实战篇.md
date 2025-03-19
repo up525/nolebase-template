@@ -1,8 +1,9 @@
-![](assets/Pasted%20image%2020250319103340.png)
+## Redis实战篇
+
 每一个请求都是一个线程，为了防止出现多线程并发修改的问题，可以使用ThreadLocal，ThreadLocal会在每一个线程的内部创建一个map，这样可以保证每一个线程的请求来了之后都会有一个独立的存储空间，这样就可以保证各个线程之间相互没有干扰。
-![](assets/Pasted%20image%2020250319104359.png)
+
 ## 1.发送手机验证码
-![](assets/Pasted%20image%2020250319105133.png)
+
 controller层
 ```java
 /**  
@@ -111,7 +112,7 @@ public class RegexUtils {
 }
 ```
 ## 2.登陆,注册模块
-![](assets/Pasted%20image%2020250319114515.png)
+
 controller层
 ```java
 /**  
