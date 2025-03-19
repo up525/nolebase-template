@@ -1,10 +1,8 @@
 ---
 layout: home
-sidebar: false
-
+sidebar: true
 title: lqj_风的语言
 titleTemplate: 记录回忆，知识和畅想的地方
-
 hero:
   name: g~Nj$3J2^
   text: 记录回忆，知识和畅想的地方
@@ -22,7 +20,6 @@ hero:
     - theme: alt
       text: 我的GitHub
       link: https://github.com/up525
-
 features:
   - title: 多样的主题和内容
     details: 本知识库和所生成的页面均由创作者们维护，涉及到生活中各方面知识和内容，也不乏我们的回忆和畅想。
